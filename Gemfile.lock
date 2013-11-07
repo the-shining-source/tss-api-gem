@@ -23,6 +23,9 @@ GEM
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
+    growl (1.0.3)
+    growl_notify (0.0.3)
+      rb-appscript
     hashie (1.2.0)
     httpauth (0.2.0)
     jwt (0.1.8)
@@ -40,6 +43,8 @@ GEM
       rack (~> 1.2)
     rack (1.5.2)
     rake (10.1.0)
+    rb-appscript (0.6.1)
+    rb-fsevent (0.9.3)
     reek (1.2.13)
       ripper_ruby_parser (~> 0.0.7)
       ruby2ruby (~> 1.2.5)
@@ -80,7 +85,10 @@ PLATFORMS
 DEPENDENCIES
   bundler
   ci_reporter
+  growl
+  growl_notify
   rake
+  rb-fsevent
   reek (~> 1.2.12)
   roodi (~> 2.1.0)
   rspec

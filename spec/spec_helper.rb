@@ -38,6 +38,10 @@ def a_post(path)
   a_request(:post, TheShiningSource.endpoint + path)
 end
 
+def a_patch(path)
+  a_request(:patch, TheShiningSource.endpoint + path)
+end
+
 def a_put(path)
   a_request(:put, TheShiningSource.endpoint + path)
 end
@@ -52,6 +56,10 @@ end
 
 def stub_post(path)
   stub_request(:post, TheShiningSource.endpoint + path)
+end
+
+def stub_patch(path)
+  stub_request(:patch, TheShiningSource.endpoint + path)
 end
 
 def stub_put(path)
