@@ -5,10 +5,7 @@ begin
 rescue LoadError
   # ignore
 else
-  SimpleCov.start do
-    add_group 'TheShiningSource', 'lib/the_shining_source'
-    add_group 'Specs', 'spec'
-  end
+  SimpleCov.start 'the_shining_source'
 end
 
 require File.expand_path('../../lib/the_shining_source', __FILE__)

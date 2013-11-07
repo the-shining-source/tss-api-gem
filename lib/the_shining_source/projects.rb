@@ -1,11 +1,25 @@
 module TheShiningSource
   class Projects < ApiBase
     extend Autoloader
+
+    autoload_all 'the_shining_source/projects',
+      :Downloads => 'downloads',
+      :Galleries => 'galleries'
     
     def initialize(options = {})
       super(options)
     end
     
+    def downloads
+      @downloads ||= ApiFactory.new 'Projects::Downloads'
+    end
+    
+    def galleries
+      @galleries ||= ApiFactory.new 'Projects::Galleries'
+    end
+    
+
+
     def get(project_name, params={})
       get_request("/projects/#{project_name}/", params)
     end
