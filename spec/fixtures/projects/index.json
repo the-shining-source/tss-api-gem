@@ -1,0 +1,43 @@
+[{
+  "ID": 5,
+  "name": "Shining Online",
+  "url": "http:\/\/www.shiningsource.local\/projects\/shining-online\/",
+  "slug": "shining-online",
+  "created": "2000-11-29 11:38:57",
+  "modified": "2013-09-28 14:50:01",
+  "last_update": null,
+  "homepage": "http:\/\/www.shiningonline.org\/",
+  "progress": "15",
+  "summary": "Shining Online is pretty awesome",
+  "twitter_name": "ShiningOnline",
+  "facebook_page": "https:\/\/www.facebook.com\/test\/",
+  "google_plus": "",
+  "description": "<p>Shining Online is a shining-style game developed by Newts and Ty. It is currently at version 0.4, which was released back in 2003. Work on the project ceased during university \/ life, but is now back on track. As usual, release dates are not being published, but keep up with the Worklog to see what we\u2019re doing\u2026<\/p>\n\n<p>You can also get smaller, more regular updates on the project Twitter page: <a href=\"https:\/\/twitter.com\/shiningonline\/\">twitter.com\/shiningonline<\/a><\/p>",
+  "banners": {
+    "large": "\/wp-content\/uploads\/projects\/shining-online\/project-banner.png",
+    "medium": "",
+    "small": "\/wp-content\/uploads\/projects\/shining-online\/project-icon.png"
+  }
+}, {
+  "name": "Shiny Sword",
+  "url": "http:\/\/www.shiningsource.local\/projects\/shiny-sword\/",
+  "slug": "shiny-sword",
+  "created": "2006-12-27 13:23:32",
+  "modified": "2010-07-07 23:03:46",
+  "last_update": null,
+  "homepage": null,
+  "progress": null,
+  "summary": null,
+  "twitter_name": null,
+  "facebook_page": null,
+  "google_plus": null,
+  "description": "<blockquote>\r\nMany dreams have long drowned,\r\nin the waters of everyday life.\r\n\r\nMany ideals have long faded,\r\nin the dim light of realism.\r\n\r\nMany worlds have long fallen,\r\ninto the depths of my trash can.\r\n\r\nMany heroes have long ceased to exist...\r\n...but Seolean outlasts them all.\r\n<\/blockquote>\r\n\r\n<h4>It's been a while...<\/h4>\r\n..but the Shiny Sword Cloudslayer site has been reopened!\r\n\r\nIn the next couple of weeks I'll gradually add some fresh pages and resources to this section. My updating behaviour has been so utterly unpredictable these days that there is really no point in planning or promising anything, but eventually stuff is bound to appear here :). My main gripe about the old site (not the temporary page, mind you!) was that it lacked the cosiness the former Shiny Sword designs used to have. With this design I'm trying to restore that feel a bit again :).<br><br>\r\n\r\nIn due time this introductionary section will disappear and you'll be able to read all the recent SSC news &amp; events up here. The final site won't be ultra-fancy, but I do strive to make it a lot more interesting and enjoyable than the last one :). If you have any suggestions on what you like to have on the site, feel free to post in <a href=\"http:\/\/www.shiningsource.net\/forum\/index.php?board=9.0\" target=\"_blank\">this forum<\/a>!",
+  "banners": {
+    "large": "http:\/\/www.shiningsource.net\/wp-content\/uploads\/2008\/09\/shiny-sword1.png",
+    "medium": "\/rsc\/projects\/shiny-sword\/fp-shinysword.jpg",
+    "small": null
+  },
+  "downloads": ["shiny-sword-demo-1"],
+  "galleries": [],
+  "team_members": ["Devlyn", "Elvenfyre"]
+}] 

@@ -1,0 +1,19 @@
+{
+  "name": "Shining Online",
+  "url": "http:\/\/www.shiningsource.local\/projects\/shining-online\/",
+  "slug": "shining-online",
+  "created": "2000-11-29 11:38:57",
+  "modified": "2013-03-18 01:41:38",
+  "last_update": null,
+  "homepage": "http:\/\/www.shiningonline.org\/",
+  "progress": "15",
+  "summary": "Shining Online is pretty awesome",
+  "description": "<p>Shining Online is a shining-style game developed by Newts and Ty. It is currently at version 0.4, which was released back in 2003. Work on the project ceased during university \/ life, but is now back on track. As usual, release dates are not being published, but keep up with the Worklog to see what we\u2019re doing\u2026<\/p>\n\n<p>You can also get smaller, more regular updates on the project Twitter page: <a href=\"https:\/\/twitter.com\/shiningonline\/\">twitter.com\/shiningonline<\/a><\/p>",
+  "banners": {
+    "large": "\/wp-content\/uploads\/projects\/shining-online\/project-banner.png",
+    "medium": "\/rsc\/projects\/shining-online\/fp-sonline.png",
+    "small": "\/wp-content\/uploads\/projects\/shining-online\/project-icon.png"
+  },
+  "downloads": ["shining-online-demo-3b"],
+  "team_members": ["Newts", "Ty"]
+}
