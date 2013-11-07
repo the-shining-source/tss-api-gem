@@ -8,7 +8,7 @@ class SimpleCov::Formatter::MergedFormatter
   end
 end
 
-#SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
+SimpleCov.formatter = SimpleCov::Formatter::MergedFormatter
 SimpleCov.start
 
 require File.expand_path('../../lib/the_shining_source', __FILE__)
