@@ -1,12 +1,15 @@
-begin
-  require 'simplecov'
-  require 'simplecov-rcov'  
-  SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
-rescue LoadError
-  # ignore
-else
-  SimpleCov.start 'the_shining_source'
+require 'simplecov'
+require 'simplecov-rcov'  
+
+class SimpleCov::Formatter::MergedFormatter
+  def format(result)
+     SimpleCov::Formatter::HTMLFormatter.new.format(result)
+     SimpleCov::Formatter::RcovFormatter.new.format(result)
+  end
 end
+
+#SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
+SimpleCov.start
 
 require File.expand_path('../../lib/the_shining_source', __FILE__)
 

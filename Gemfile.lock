@@ -68,6 +68,8 @@ GEM
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
+    simplecov-rcov (0.2.3)
+      simplecov (>= 0.4.1)
     webmock (1.9.3)
       addressable (>= 2.2.7)
       crack (>= 0.3.2)
@@ -83,5 +85,6 @@ DEPENDENCIES
   roodi (~> 2.1.0)
   rspec
   simplecov (~> 0.7.1)
+  simplecov-rcov
   the_shining_source!
   webmock (~> 1.9.0)
