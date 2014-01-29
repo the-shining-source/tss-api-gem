@@ -4,10 +4,15 @@ module TheShiningSource
 
     autoload_all 'the_shining_source/projects',
       :Downloads => 'downloads',
-      :Galleries => 'galleries'
+      :Galleries => 'galleries',
+      :Activity  => 'activity'
     
     def initialize(options = {})
       super(options)
+    end
+    
+    def activity
+      @Activity ||= ApiFactory.new 'Projects::Activity'
     end
     
     def downloads
@@ -18,8 +23,6 @@ module TheShiningSource
       @galleries ||= ApiFactory.new 'Projects::Galleries'
     end
     
-
-
     def get(project_name, params={})
       get_request("/projects/#{project_name}/", params)
     end

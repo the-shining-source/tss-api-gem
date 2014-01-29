@@ -6,5 +6,10 @@ module TheShiningSource
     end
     alias :find :get
     
+    def list(project)
+      get_request("/projects/#{project}/downloads/")
+    end
+    alias :all :list
+    
   end
 end

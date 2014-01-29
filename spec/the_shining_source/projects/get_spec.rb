@@ -15,7 +15,7 @@ describe TheShiningSource::Projects, '#get' do
       a_get("projects/shining-online/").
         should have_been_made
     end
-
+    
     it "should return information about the found project" do
       project = client.projects.find('shining-online')
       project['name'].should == 'Shining Online'
