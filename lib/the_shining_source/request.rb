@@ -64,10 +64,5 @@ module TheShiningSource
       (params.key?('data') && !params['data'].nil?) ? params['data'] : params
     end
 
-    def _extract_mime_type(params, options) # :nodoc:
-      options['resource']  = params['resource'] ? params.delete('resource') : ''
-      options['mime_type'] = params['resource'] ? params.delete('mime_type') : ''
-    end
-
   end
 end

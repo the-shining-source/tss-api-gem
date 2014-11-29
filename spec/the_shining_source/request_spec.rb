@@ -57,5 +57,11 @@ describe TheShiningSource::Request do
     @stub.delete_request('/')
     expect(a_delete('')).to have_been_made
   end
+
+  it 'can make a REQUEST with extra data as the body' do
+    stub_post('').with(body: 'body data').to_return(body: '')
+    @stub.request(:post, '/', { 'data' => 'body data' }, {})
+    expect(a_post('')).to have_been_made
+  end
     
 end
