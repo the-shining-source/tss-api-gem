@@ -1,5 +1,5 @@
 require 'simplecov'
-require 'simplecov-rcov'  
+require 'simplecov-rcov'
 
 class SimpleCov::Formatter::MergedFormatter
   def format(result)
@@ -9,7 +9,9 @@ class SimpleCov::Formatter::MergedFormatter
 end
 
 SimpleCov.formatter = SimpleCov::Formatter::MergedFormatter
-SimpleCov.start
+SimpleCov.start do
+  add_filter '/core_ext/'
+end
 
 require File.expand_path('../../lib/the_shining_source', __FILE__)
 
