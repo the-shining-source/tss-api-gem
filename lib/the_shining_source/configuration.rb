@@ -1,7 +1,9 @@
 require 'faraday'
 
 module TheShiningSource
-  
+
+  ##
+  # Stores configuration options for a client instance.
   module Configuration
     
     # Array of valid options
