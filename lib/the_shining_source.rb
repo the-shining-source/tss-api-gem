@@ -24,7 +24,7 @@ module TheShiningSource
     
     # Delegate to Client
     def respond_to?(method, include_private = false)
-      return new.respond_to?(method, include_private) || super(method, include_private)
+      new.respond_to?(method, include_private) || super(method, include_private)
     end
     
   end
@@ -32,9 +32,9 @@ module TheShiningSource
   ##
   # Autoload files
   autoload_all 'the_shining_source',
-    :ApiBase         => 'api_base',
-    :ApiFactory      => 'api_factory',
-    :Client          => 'client',
-    :Projects        => 'projects'
-
+    ApiBase:    'api_base',
+    ApiFactory: 'api_factory',
+    Client:     'client',
+    Projects:   'projects'
+  
 end
