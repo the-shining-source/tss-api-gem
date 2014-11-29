@@ -3,6 +3,7 @@ require 'the_shining_source/configuration'
 require 'the_shining_source/autoloader'
 
 require 'the_shining_source/entities/download'
+require 'the_shining_source/entities/gallery'
 
 module TheShiningSource
   extend Configuration
