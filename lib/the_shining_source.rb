@@ -2,6 +2,8 @@ require 'the_shining_source/version'
 require 'the_shining_source/configuration'
 require 'the_shining_source/autoloader'
 
+require 'the_shining_source/entities/download'
+
 module TheShiningSource
   extend Configuration
   extend Autoloader

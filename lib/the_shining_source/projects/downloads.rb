@@ -2,14 +2,16 @@ module TheShiningSource
   class Projects::Downloads < ApiBase
     
     def get(project, name)
-      get_request("/projects/#{project}/downloads/#{name}/")
+      download = get_request("/projects/#{project}/downloads/#{name}/")
+      TheShiningSource::Download.new(download)
     end
-    alias :find :get
+    alias_method :find, :get
     
     def list(project)
-      get_request("/projects/#{project}/downloads/")
+      downloads = get_request("/projects/#{project}/downloads/")
+      downloads.map { |download| TheShiningSource::Download.new(download) }
     end
-    alias :all :list
+    alias_method :all, :list
     
   end
 end
