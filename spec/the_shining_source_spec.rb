@@ -34,11 +34,11 @@ describe TheShiningSource do
       expect(subject.endpoint).to eq 'http://example.org'
     end
 
-    it "should return the default user agent" do
+    it 'should return the default user agent' do
       expect(subject.user_agent).to eq TheShiningSource::Configuration::DEFAULT_USER_AGENT
     end
 
-    it "should allow to set new user agent" do
+    it 'should allow to set new user agent' do
       subject.user_agent = 'New User Agent'
       expect(subject.user_agent).to eq 'New User Agent'
     end
