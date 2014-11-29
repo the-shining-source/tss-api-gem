@@ -3,16 +3,16 @@ module TheShiningSource
     extend Autoloader
 
     autoload_all 'the_shining_source/projects',
-      :Downloads => 'downloads',
-      :Galleries => 'galleries',
-      :Activity  => 'activity'
+      Downloads: 'downloads',
+      Galleries: 'galleries',
+      Activity:  'activity'
     
     def initialize(options = {})
       super(options)
     end
     
     def activity
-      @Activity ||= ApiFactory.new 'Projects::Activity'
+      @activity ||= ApiFactory.new 'Projects::Activity'
     end
     
     def downloads
@@ -23,16 +23,16 @@ module TheShiningSource
       @galleries ||= ApiFactory.new 'Projects::Galleries'
     end
     
-    def get(project_name, params={})
+    def get(project_name, params = {})
       get_request("/projects/#{project_name}/", params)
     end
-    alias :find :get
-    alias :find_by_slug :get
+    alias_method :find, :get
+    alias_method :find_by_slug, :get
     
     def list(params = {})
-      get_request("/projects/", params)
+      get_request('/projects/', params)
     end
-    alias :all :list
+    alias_method :all, :list
     
   end
 end

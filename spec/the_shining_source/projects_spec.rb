@@ -9,6 +9,6 @@ describe TheShiningSource::Projects do
 
   it 'should return a TheShiningSource::Projects::Galleries instance' do
     expect(projects.galleries).to be_a TheShiningSource::Projects::Galleries
-  end  
+  end
   
 end
