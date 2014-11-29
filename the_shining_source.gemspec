@@ -1,14 +1,14 @@
 $:.push File.expand_path('../lib', __FILE__)
-require "the_shining_source/version"
+require 'the_shining_source/version'
 
 Gem::Specification.new do |s|
   
   s.name          = 'the_shining_source'
-  s.authors       = ["Phil Newton"]
+  s.authors       = ['Phil Newton']
   s.email         = ['phil@sodaware.net']
   s.homepage      = 'https://github.com/the-shining-source/tss-api-gem'
-  s.summary       = %q{ Ruby wrapper for the Shining source API}
-  s.description   = %q{ Ruby wrapper for the Shining Source API. It's pretty awesome. }
+  s.summary       = 'Ruby wrapper for the Shining source API'
+  s.description   = "Ruby wrapper for the Shining Source API. It's pretty awesome."
   s.version       = TheShiningSource::VERSION::STRING.dup
   s.platform      = Gem::Platform::RUBY
   
