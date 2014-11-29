@@ -13,6 +13,18 @@ describe TheShiningSource do
   it "should respond to 'configure' message" do
     expect(subject).to respond_to :configure
   end
+
+  describe 'delegating to the client' do
+
+    it 'should respond_to if method exists Client' do
+      expect(TheShiningSource).to respond_to(:projects)
+    end
+
+    it 'should delegate missing methods to Client' do
+      expect(TheShiningSource.projects).to be_a(TheShiningSource::Projects)
+    end
+
+  end
   
   describe 'setting configuration options' do
     
@@ -64,5 +76,5 @@ describe TheShiningSource do
       end
     end
   end
-  
+
 end
