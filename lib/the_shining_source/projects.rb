@@ -6,33 +6,45 @@ module TheShiningSource
       Downloads: 'downloads',
       Galleries: 'galleries',
       Activity:  'activity'
-    
-    def initialize(options = {})
-      super(options)
-    end
-    
-    def activity
-      @activity ||= ApiFactory.new 'Projects::Activity'
-    end
-    
-    def downloads
-      @downloads ||= ApiFactory.new 'Projects::Downloads'
-    end
-    
-    def galleries
-      @galleries ||= ApiFactory.new 'Projects::Galleries'
-    end
-    
-    def get(project_name, params = {})
-      get_request("/projects/#{project_name}/", params)
+
+    ##
+    # Get information about a single project by the slug +project_name+.
+    def get(project_name)
+      get_request("/projects/#{project_name}/")
     end
     alias_method :find, :get
     alias_method :find_by_slug, :get
-    
+
+    ##
+    # Get information about all projects on the site.
     def list(params = {})
       get_request('/projects/', params)
     end
     alias_method :all, :list
+
+    ##
+    # Get the project activity helper
+    def activity
+      @activity ||= ApiFactory.new 'Projects::Activity'
+    end
     
+    ##
+    # Get the project downloads helper
+    def downloads
+      @downloads ||= ApiFactory.new 'Projects::Downloads'
+    end
+    
+    ##
+    # Get the project galleries helper
+    def galleries
+      @galleries ||= ApiFactory.new 'Projects::Galleries'
+    end
+
+    ##
+    # Create a new Projects api helper
+    def initialize(options = {})
+      super(options)
+    end
+
   end
 end
