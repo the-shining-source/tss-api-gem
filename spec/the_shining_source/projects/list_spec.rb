@@ -6,22 +6,20 @@ describe TheShiningSource::Projects, '#index' do
     @client = TheShiningSource::Client.new
   end
 
-  describe "GET => /projects/" do
+  describe 'GET => /projects/' do
     
     before do
-      stub_get("projects/").
-        to_return(:body => fixture("projects/index.json"), :headers => {:content_type => "application/json"})
+      stub_get('projects/', 'projects/index.json')
     end    
     
-    it "should get a list of projects" do
-      @client.projects.list()
-      a_get("projects/").
-        should have_been_made
+    it 'should get a list of projects' do
+      @client.projects.list
+      expect(a_get('projects/')).to have_been_made
     end
 
-    it "should fetch an array of projects" do
-      projects = @client.projects.list()
-      projects.should be_a Array
+    it 'should fetch an array of projects' do
+      projects = @client.projects.list
+      expect(projects).to be_a(Array)
     end
     
   end  

@@ -50,8 +50,20 @@ def stub_delete(path)
   stub_request(:delete, TheShiningSource.endpoint + path)
 end
 
-def stub_get(path)
-  stub_request(:get, TheShiningSource.endpoint + path)
+def stub_get(path, fixture_file = nil)
+  
+  stub = stub_request(:get, TheShiningSource.endpoint + path)
+  
+  if fixture_file
+    stub.to_return(
+      body: fixture(fixture_file),
+      headers: {
+        content_type: 'application/json'
+      }
+    )
+  end
+
+  stub
 end
 
 def stub_post(path)

@@ -8,7 +8,7 @@ describe TheShiningSource::ApiFactory do
     end
     
     it 'instantiates a new object if valid class is used' do
-      described_class.new('Projects').should be_a TheShiningSource::Projects
+      expect(described_class.new('Projects')).to be_a TheShiningSource::Projects
     end
   end
   
