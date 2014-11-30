@@ -31,7 +31,7 @@ module TheShiningSource
 
     ##
     # Make a HTTP request.
-    def request(method, path, params, options)
+    def request(method, path, params = {}, options = {})
 
       # Check the HTTP method us supported
       unless METHODS.include?(method)

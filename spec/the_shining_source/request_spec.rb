@@ -20,7 +20,7 @@ describe TheShiningSource::Request do
   end
   
   it 'raises an exception for invalid HTTP methods' do
-    expect { @stub.request(:invalid, '/', {}, {}) }.to raise_error(ArgumentError)
+    expect { @stub.request(:invalid, '/') }.to raise_error(ArgumentError)
   end
   
   it 'can make GET requests' do
