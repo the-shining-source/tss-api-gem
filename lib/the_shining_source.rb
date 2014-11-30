@@ -2,6 +2,7 @@ require 'the_shining_source/version'
 require 'the_shining_source/configuration'
 require 'the_shining_source/autoloader'
 
+require 'the_shining_source/entities/entity_base'
 require 'the_shining_source/entities/download'
 require 'the_shining_source/entities/gallery'
 
