@@ -11,8 +11,4 @@ describe TheShiningSource::Projects do
     expect(projects.galleries).to be_a TheShiningSource::Projects::Galleries
   end
 
-  it 'should return a TheShiningSource::Projects::Activity instance' do
-    expect(projects.activity).to be_a TheShiningSource::Projects::Activity
-  end
-
 end

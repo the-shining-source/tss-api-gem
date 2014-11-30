@@ -4,8 +4,7 @@ module TheShiningSource
 
     autoload_all 'the_shining_source/projects',
       Downloads: 'downloads',
-      Galleries: 'galleries',
-      Activity:  'activity'
+      Galleries: 'galleries'
 
     ##
     # Get information about a single project by the slug +project_name+.
@@ -21,12 +20,6 @@ module TheShiningSource
       get_request('/projects/', params)
     end
     alias_method :all, :list
-
-    ##
-    # Get the project activity helper
-    def activity
-      @activity ||= ApiFactory.new 'Projects::Activity'
-    end
     
     ##
     # Get the project downloads helper
