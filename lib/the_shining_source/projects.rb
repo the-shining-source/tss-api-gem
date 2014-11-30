@@ -3,8 +3,8 @@ module TheShiningSource
     extend Autoloader
 
     autoload_all 'the_shining_source/projects',
-      Downloads: 'downloads',
-      Galleries: 'galleries'
+                 Downloads: 'downloads',
+                 Galleries: 'galleries'
 
     ##
     # Get information about a single project by the slug +project_name+.
