@@ -8,7 +8,7 @@ Easily access data from [The Shining Source](http://www.shiningsource.org/)'s AP
 
 Add this line to your application's Gemfile:
 
-```shell
+```ruby
 gem 'the_shining_source', github: 'the-shining-source/tss-api-gem'
 ```
 
