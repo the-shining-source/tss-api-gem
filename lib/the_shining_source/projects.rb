@@ -18,7 +18,8 @@ module TheShiningSource
     ##
     # Get information about all projects on the site.
     def list(params = {})
-      get_request('/projects/', params)
+      response = get_request('/projects/', params)
+      response.map { |project| TheShiningSource::Project.new(project) }
     end
     alias_method :all, :list
     
