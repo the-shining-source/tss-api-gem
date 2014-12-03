@@ -5,6 +5,7 @@ require 'the_shining_source/autoloader'
 require 'the_shining_source/entities/entity_base'
 require 'the_shining_source/entities/download'
 require 'the_shining_source/entities/gallery'
+require 'the_shining_source/entities/project'
 
 module TheShiningSource
   extend Configuration

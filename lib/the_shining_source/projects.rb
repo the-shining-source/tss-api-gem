@@ -9,7 +9,8 @@ module TheShiningSource
     ##
     # Get information about a single project by the slug +project_name+.
     def get(project_name)
-      get_request("/projects/#{project_name}/")
+      response = get_request("/projects/#{project_name}/")
+      TheShiningSource::Project.new(response)
     end
     alias_method :find, :get
     alias_method :find_by_slug, :get
