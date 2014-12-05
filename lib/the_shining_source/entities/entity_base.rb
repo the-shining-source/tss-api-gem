@@ -5,7 +5,10 @@ module TheShiningSource
     ##
     # Create a new entity object from +data+ hash
     def initialize(data = {})
-      data.each { |key, value| send("#{key}=".downcase, value) }
+      data.each do |key, value|
+        method = "#{key}=".downcase
+        send(method, value) if respond_to? method
+      end
     end
  
   end
