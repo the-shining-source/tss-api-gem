@@ -6,6 +6,7 @@ require 'the_shining_source/entities/entity_base'
 require 'the_shining_source/entities/download'
 require 'the_shining_source/entities/gallery'
 require 'the_shining_source/entities/project'
+require 'the_shining_source/entities/commit'
 
 module TheShiningSource
   extend Configuration
