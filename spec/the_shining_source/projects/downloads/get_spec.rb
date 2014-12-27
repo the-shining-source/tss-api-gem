@@ -12,19 +12,19 @@ describe TheShiningSource::Projects::Downloads, '#get' do
       stub_get('projects/shining-online/downloads/shining-online-demo-3b/', 'projects/downloads/download.json')
     end    
     
-    it 'should get a single download' do
-      @client.projects.downloads.find('shining-online', 'shining-online-demo-3b')
+    it 'retrieves a single download' do
+      @client.projects.downloads.get('shining-online', 'shining-online-demo-3b')
       expect(a_get('projects/shining-online/downloads/shining-online-demo-3b/')).
         to have_been_made
     end
 
-    it 'should return a Download object' do
+    it 'returns a Download object' do
       download = @client.projects.downloads.get('shining-online', 'shining-online-demo-3b')
       expect(download).to be_a TheShiningSource::Download
       expect(download.name).to eq('Shining Online - Demo 3B')
     end
 
-    it 'should support the `find` alias' do
+    it 'supports the `find` alias' do
       download = @client.projects.downloads.find('shining-online', 'shining-online-demo-3b')
       expect(download).to be_a TheShiningSource::Download
     end
