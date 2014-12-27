@@ -4,8 +4,9 @@ module TheShiningSource
 
     autoload_all 'the_shining_source/projects',
                  Downloads: 'downloads',
-                 Galleries: 'galleries'
-
+                 Galleries: 'galleries',
+                 Commits:   'commits'
+               
     ##
     # Get information about a single project by the slug +project_name+.
     def get(project_name)
@@ -33,6 +34,12 @@ module TheShiningSource
     # Get the project galleries helper
     def galleries
       @galleries ||= ApiFactory.new 'Projects::Galleries'
+    end
+
+    ##
+    # Get the project commits helper
+    def commits
+      @commits ||= ApiFactory.new 'Projects::Commits'
     end
 
     ##

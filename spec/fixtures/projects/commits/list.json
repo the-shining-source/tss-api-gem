@@ -1,0 +1,91 @@
+[
+    {
+        "commit_id": "122",
+        "commit_message": "Update systems to use new component lookup meta data",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2014-07-30 14:37:13",
+        "author_id": "12"
+    },
+    {
+        "commit_id": "121",
+        "commit_message": "Cleaned up component files",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2014-07-30 14:27:05",
+        "author_id": "12"
+    },
+    {
+        "commit_id": "120",
+        "commit_message": "Lots of code cleanup and changes\n\n* Cleaned up Offline Town Screen to use some newer Pangolin features\n* Added a new (and very basic) ScriptEngineService for running queued actions\n* Added a basic message box that can appear and vanish in a Shining Force 3 style\n* Added a new \"Touch\" event and system\n* Added a basic teleporter action for moving entities around",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2014-07-30 13:44:49",
+        "author_id": "12"
+    },
+    {
+        "commit_id": "119",
+        "commit_message": "Updated frontend, debug commands and added a stub loading screen",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2014-06-16 17:13:12",
+        "author_id": "12"
+    },
+    {
+        "commit_id": "118",
+        "commit_message": "Cleaned up body and sprite components to support server usage",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2014-06-16 17:11:59",
+        "author_id": "12"
+    },
+    {
+        "commit_id": "117",
+        "commit_message": "Camera Behaviour no longer uses hard-coded tile sizes",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2014-02-17 05:55:16",
+        "author_id": "12"
+    },
+    {
+        "commit_id": "116",
+        "commit_message": "Rearranged World Server to be more modular\n\n* Moved files around into better directories\n* Added a new \"WorldListener\" that wraps the GameHandler\n* Added message handlers that can be assigned to the listener",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2014-02-17 02:39:01",
+        "author_id": "12"
+    },
+    {
+        "commit_id": "115",
+        "commit_message": "Updated ignore list to strip out most .bmx directories",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2014-01-28 17:51:36",
+        "author_id": "12"
+    },
+    {
+        "commit_id": "114",
+        "commit_message": "Moved services from \"client\" to \"shared\"",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2014-01-28 17:49:27",
+        "author_id": "12"
+    },
+    {
+        "commit_id": "113",
+        "commit_message": "Added lots more scripting actions and beginnings of message box",
+        "author_username": "Ty",
+        "author_name": "",
+        "author_email": "",
+        "created_at": "2013-12-27 17:15:17",
+        "author_id": "12"
+    }]

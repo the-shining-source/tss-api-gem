@@ -10,5 +10,9 @@ describe TheShiningSource::Projects do
   it 'should return a TheShiningSource::Projects::Galleries instance' do
     expect(projects.galleries).to be_a TheShiningSource::Projects::Galleries
   end
-
+  
+  it 'can return a TheShiningSource::Projects::Commits instance' do
+    expect(projects.downloads).to be_a TheShiningSource::Projects::Downloads
+  end
+  
 end
