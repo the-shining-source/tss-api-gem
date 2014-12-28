@@ -1,91 +1,232 @@
 [
     {
-        "commit_id": "122",
-        "commit_message": "Update systems to use new component lookup meta data",
+        "commit_id": "145",
+        "commit_message": "Moved ResourceService functionality to the Pangolin resource service",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2014-07-30 14:37:13",
+        "created_at": "2014-09-20 01:05:53",
+        "files": [
+            {
+                "filename": "/trunk/src/shared/services/resource_service/resource_service.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            }
+        ],
         "author_id": "12"
     },
     {
-        "commit_id": "121",
-        "commit_message": "Cleaned up component files",
+        "commit_id": "144",
+        "commit_message": "Added documentation to script engine and cleaned up API",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2014-07-30 14:27:05",
+        "created_at": "2014-09-14 18:52:13",
+        "files": [
+            {
+                "filename": "/trunk/src/shared/services/script_engine_service/functions/add_event_listener.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            },
+            {
+                "filename": "/trunk/src/shared/services/script_engine_service/script_engine_function.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            },
+            {
+                "filename": "/trunk/src/shared/services/script_engine_service/script_wrapper.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            }
+        ],
         "author_id": "12"
     },
     {
-        "commit_id": "120",
-        "commit_message": "Lots of code cleanup and changes\n\n* Cleaned up Offline Town Screen to use some newer Pangolin features\n* Added a new (and very basic) ScriptEngineService for running queued actions\n* Added a basic message box that can appear and vanish in a Shining Force 3 style\n* Added a new \"Touch\" event and system\n* Added a basic teleporter action for moving entities around",
+        "commit_id": "143",
+        "commit_message": "Added extra layer to map renderer\n\nNew layer is above the base, but underneath the player. Used for adding things\nlike barrels and other stationary tiles to the ground without having to redraw\neverything.",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2014-07-30 13:44:49",
+        "created_at": "2014-09-13 17:44:49",
+        "files": [
+            {
+                "filename": "/trunk/src/client/screens/offline_town_screen.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            }
+        ],
         "author_id": "12"
     },
     {
-        "commit_id": "119",
-        "commit_message": "Updated frontend, debug commands and added a stub loading screen",
+        "commit_id": "142",
+        "commit_message": "Updated blam build script to compress stories and data",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2014-06-16 17:13:12",
+        "created_at": "2014-09-13 17:30:54",
+        "files": [
+            {
+                "filename": "/trunk/build.xml",
+                "file_type": "file",
+                "change_type": "M"
+            }
+        ],
         "author_id": "12"
     },
     {
-        "commit_id": "118",
-        "commit_message": "Cleaned up body and sprite components to support server usage",
+        "commit_id": "141",
+        "commit_message": "Added LISP scripts used by the main game",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2014-06-16 17:11:59",
+        "created_at": "2014-09-13 17:30:10",
+        "files": [
+            {
+                "filename": "/trunk/raw/script_db",
+                "file_type": "dir",
+                "change_type": "A"
+            },
+            {
+                "filename": "/trunk/raw/script_db/entities.lisp",
+                "file_type": "file",
+                "change_type": "A"
+            },
+            {
+                "filename": "/trunk/raw/script_db/event.lisp",
+                "file_type": "file",
+                "change_type": "A"
+            },
+            {
+                "filename": "/trunk/raw/script_db/message-box.lisp",
+                "file_type": "file",
+                "change_type": "A"
+            },
+            {
+                "filename": "/trunk/raw/script_db/screen.lisp",
+                "file_type": "file",
+                "change_type": "A"
+            },
+            {
+                "filename": "/trunk/raw/script_db/script-engine.lisp",
+                "file_type": "file",
+                "change_type": "A"
+            },
+            {
+                "filename": "/trunk/raw/script_db/session.lisp",
+                "file_type": "file",
+                "change_type": "A"
+            }
+        ],
         "author_id": "12"
     },
     {
-        "commit_id": "117",
-        "commit_message": "Camera Behaviour no longer uses hard-coded tile sizes",
+        "commit_id": "140",
+        "commit_message": "Updated main game class to use all the new stuff",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2014-02-17 05:55:16",
+        "created_at": "2014-09-13 17:29:03",
+        "files": [
+            {
+                "filename": "/trunk/src/client/client.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            },
+            {
+                "filename": "/trunk/src/client/core/game.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            },
+            {
+                "filename": "/trunk/src/client/screens/offline_town_screen.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            }
+        ],
         "author_id": "12"
     },
     {
-        "commit_id": "116",
-        "commit_message": "Rearranged World Server to be more modular\n\n* Moved files around into better directories\n* Added a new \"WorldListener\" that wraps the GameHandler\n* Added message handlers that can be assigned to the listener",
+        "commit_id": "139",
+        "commit_message": "Added placeholder overlay for showing team stats",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2014-02-17 02:39:01",
+        "created_at": "2014-09-13 17:28:45",
+        "files": [
+            {
+                "filename": "/trunk/src/client/screens/overlays/status_menu_overlay.bmx",
+                "file_type": "file",
+                "change_type": "A"
+            }
+        ],
         "author_id": "12"
     },
     {
-        "commit_id": "115",
-        "commit_message": "Updated ignore list to strip out most .bmx directories",
+        "commit_id": "138",
+        "commit_message": "Added new render helpers for drawing boxes and bordered panels",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2014-01-28 17:51:36",
+        "created_at": "2014-09-13 17:28:27",
+        "files": [
+            {
+                "filename": "/trunk/src/client/gfx/bordered_box_request.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            },
+            {
+                "filename": "/trunk/src/client/gfx/bordered_panel_request.bmx",
+                "file_type": "file",
+                "change_type": "A"
+            },
+            {
+                "filename": "/trunk/src/client/gfx/character_summary_request.bmx",
+                "file_type": "file",
+                "change_type": "A"
+            }
+        ],
         "author_id": "12"
     },
     {
-        "commit_id": "114",
-        "commit_message": "Moved services from \"client\" to \"shared\"",
+        "commit_id": "137",
+        "commit_message": "Replaced old \"LoadingScreen\" with \"StoryLoadingScreen\"",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2014-01-28 17:49:27",
+        "created_at": "2014-09-13 17:27:57",
+        "files": [
+            {
+                "filename": "/trunk/src/client/screens/loading_screen.bmx",
+                "file_type": "file",
+                "change_type": "D"
+            },
+            {
+                "filename": "/trunk/src/client/screens/story_loading_screen.bmx",
+                "file_type": "file",
+                "change_type": "A"
+            }
+        ],
         "author_id": "12"
     },
     {
-        "commit_id": "113",
-        "commit_message": "Added lots more scripting actions and beginnings of message box",
+        "commit_id": "136",
+        "commit_message": "Fixed some bugs in console command system",
         "author_username": "Ty",
         "author_name": "",
         "author_email": "",
-        "created_at": "2013-12-27 17:15:17",
+        "created_at": "2014-09-13 17:26:29",
+        "files": [
+            {
+                "filename": "/trunk/src/client/core/console_commands/contentdb_command.bmx",
+                "file_type": "file",
+                "change_type": "M"
+            },
+            {
+                "filename": "/trunk/src/client/core/console_commands/resource_db_command.bmx",
+                "file_type": "file",
+                "change_type": "A"
+            }
+        ],
         "author_id": "12"
-    }]
+    }
+]
