@@ -5,6 +5,7 @@ module TheShiningSource
     autoload_all 'the_shining_source/projects',
                  Downloads: 'downloads',
                  Galleries: 'galleries',
+                 Images:    'images',
                  Commits:   'commits'
                
     ##
@@ -34,6 +35,12 @@ module TheShiningSource
     # Get the project galleries helper
     def galleries
       @galleries ||= ApiFactory.new 'Projects::Galleries'
+    end
+
+    ##
+    # Get the project images helper
+    def images
+      @images ||= ApiFactory.new 'Projects::Images'
     end
 
     ##
