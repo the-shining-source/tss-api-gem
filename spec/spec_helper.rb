@@ -1,16 +1,20 @@
-require 'simplecov'
-require 'simplecov-rcov'
+if ENV['JENKINS_URL']
 
-class SimpleCov::Formatter::MergedFormatter
-  def format(result)
-     SimpleCov::Formatter::HTMLFormatter.new.format(result)
-     SimpleCov::Formatter::RcovFormatter.new.format(result)
+  require 'simplecov'
+  require 'simplecov-rcov'
+
+  class SimpleCov::Formatter::MergedFormatter
+    def format(result)
+      SimpleCov::Formatter::HTMLFormatter.new.format(result)
+      SimpleCov::Formatter::RcovFormatter.new.format(result)
+    end
   end
-end
 
-SimpleCov.formatter = SimpleCov::Formatter::MergedFormatter
-SimpleCov.start do
-  add_filter '/core_ext/'
+  SimpleCov.formatter = SimpleCov::Formatter::MergedFormatter
+  SimpleCov.start do
+    add_filter '/core_ext/'
+  end
+
 end
 
 require File.expand_path('../../lib/the_shining_source', __FILE__)
