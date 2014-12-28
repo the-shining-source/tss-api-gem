@@ -17,7 +17,7 @@ describe TheShiningSource::EntityBase do
       expect(object.test_field).to eq('value')
     end
 
-    it 'does attempt to set a field that does not exist' do
+    it 'does not attempt to set a field that does not exist' do
       StubEntityClass.new(invalid_field: 'value')
     end
 
