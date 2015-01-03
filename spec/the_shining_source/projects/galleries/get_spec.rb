@@ -12,23 +12,23 @@ describe TheShiningSource::Projects::Galleries, '#get' do
       stub_get('projects/shining-online/galleries/old-pc-version/', 'projects/galleries/gallery.json')
     end    
     
-    it 'should get a single gallery' do
+    it 'retrieves a single gallery' do
       @client.projects.galleries.get('shining-online', 'old-pc-version')
       expect(a_get('projects/shining-online/galleries/old-pc-version/')).to have_been_made
     end
 
-    it 'should return a Gallery object' do
+    it 'returns a Gallery object' do
       gallery = @client.projects.galleries.get('shining-online', 'old-pc-version')
       expect(gallery).to be_a TheShiningSource::Gallery
       expect(gallery.name).to eq('Old PC Version')
     end
 
-    it 'should support the `find` alias' do
+    it 'supports the `find` alias' do
       @client.projects.galleries.find('shining-online', 'old-pc-version')
       expect(a_get('projects/shining-online/galleries/old-pc-version/')).to have_been_made
     end
     
-    it 'should support the `find_by_slug` alias' do
+    it 'supports the `find_by_slug` alias' do
       @client.projects.galleries.find_by_slug('shining-online', 'old-pc-version')
       expect(a_get('projects/shining-online/galleries/old-pc-version/')).to have_been_made
     end

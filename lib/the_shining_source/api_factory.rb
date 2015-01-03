@@ -5,7 +5,7 @@ module TheShiningSource
     
     def self.new(klass, options={})
       return create_instance(klass, options) if klass
-      raise ArgumentError, 'must provide a klass to be instantiated'
+      fail ArgumentError, 'must provide a klass to be instantiated'
     end
     
     def self.create_instance(klass, options)
@@ -20,8 +20,9 @@ module TheShiningSource
       classes.split('::').each do |klass|
         constant = constant.const_get klass
       end
-      return constant
+      constant
     end
     
   end
+  
 end

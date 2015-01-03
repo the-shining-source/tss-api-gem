@@ -23,12 +23,12 @@ describe TheShiningSource::Projects::Images, '#get' do
       expect(image.name).to eq('PC - Shot 8')
     end
 
-    it 'should support the `find` alias' do
+    it 'supports the `find` alias' do
       @client.projects.images.find('shining-online', 'pc-shot-8')
       expect(a_get('projects/shining-online/images/pc-shot-8/')).to have_been_made
     end
     
-    it 'should support the `find_by_slug` alias' do
+    it 'supports the `find_by_slug` alias' do
       @client.projects.images.find_by_slug('shining-online', 'pc-shot-8')
       expect(a_get('projects/shining-online/images/pc-shot-8/')).to have_been_made
     end
