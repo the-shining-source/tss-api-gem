@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'webmock', '~> 1.9.0'
   s.add_development_dependency 'simplecov', '~> 0.7.1'
   s.add_development_dependency 'simplecov-rcov'
-  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rake', '>= 12.3.3'
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'ci_reporter'
 

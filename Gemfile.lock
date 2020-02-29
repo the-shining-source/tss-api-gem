@@ -23,7 +23,7 @@ GEM
     hashie (1.2.0)
     multi_json (1.8.2)
     multipart-post (1.2.0)
-    rake (10.1.0)
+    rake (13.0.1)
     reek (1.2.13)
       ripper_ruby_parser (~> 0.0.7)
       ruby2ruby (~> 1.2.5)
@@ -64,7 +64,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   ci_reporter
-  rake
+  rake (>= 12.3.3)
   reek (~> 1.2.12)
   roodi (~> 2.1.0)
   rspec
@@ -74,4 +74,4 @@ DEPENDENCIES
   webmock (~> 1.9.0)
 
 BUNDLED WITH
-   1.16.1
+   1.17.2
