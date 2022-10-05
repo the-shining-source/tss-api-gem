@@ -9,7 +9,8 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.3.5)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     builder (3.2.2)
     ci_reporter (1.9.0)
       builder (>= 2.1.2)
@@ -23,6 +24,7 @@ GEM
     hashie (1.2.0)
     multi_json (1.8.2)
     multipart-post (1.2.0)
+    public_suffix (5.0.0)
     rake (13.0.1)
     reek (1.2.13)
       ripper_ruby_parser (~> 0.0.7)
